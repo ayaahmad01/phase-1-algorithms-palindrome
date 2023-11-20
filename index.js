@@ -1,9 +1,19 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  
+  word = word.toLowerCase();
+  
+ 
+  word = word.replace(/[^a-z]/g, '');
+
+  // Compare the string with its reverse
+  return word === word.split('').reverse().join('');
 }
 
 /* 
   Add your pseudocode here
+// Convert the string to lowercase
+ // Remove non-alphabetic characters
+  // Compare the string with its reverse
 */
 
 /*
